@@ -125,10 +125,13 @@ def play(board)
   end
 
   if draw?(board) == true
+    display_board(board)
     puts "Cat's Game!"
   elsif winner(board) == "X"
+    display_board(board)
     puts "Congratulations X!"
   elsif winner(board) == "O"
+    display_board(board)
     puts "Congratulations O!"
   end
 end
